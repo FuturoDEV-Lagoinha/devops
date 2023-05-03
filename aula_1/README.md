@@ -18,3 +18,4 @@ maven-shade-plugin 3.2.4
 - upar programa buildado .jar (pasta "target")
 - mudar entry point da lambda para dev.cloud.HelloCloud::handleRequest
 - testar
+    - passar string com valor "nome" para evento de teste.
