@@ -52,5 +52,5 @@
         -rodar imagem: docker run -d --name <nome_do_conteiner> -p 80:80 <nome_da_imagem>
 
         -Via console:
-            - Recupera o valor do Public IPv4 DNS de sua instância EC2;
+            - Recupera o valor do Public IPv4 DNS de sua instância EC2: este é o <endereço_da_máquina>;
             - Faça requisição no browser: http://<endereço_da_máquina>/home.html
