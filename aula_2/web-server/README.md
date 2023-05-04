@@ -4,13 +4,18 @@
 
     Requisitos:
 
-    - Security Group
-    - Key pair
+    - Security Group (como fizemos em aula);
+        - inboud http qualquer ipv4;
+        - inbout ssh ip da sua máquina;
+        
+    - Key pair (como fizemos em aula);
+        - RES
+        - .pem (OpenSSH)
 
 #### Passo a passo
     -Via console:
         - Configurar e subir a instância EC2 (como fizemos em aula);
-        
+
     -Via Terminal:
         - Conecta na máquina localmente via ssh;
         - Instala o docker : sudo amazon-linux-extras install docker
@@ -44,3 +49,6 @@
 
         -rodar imagem: docker run -d --name <nome_do_conteiner> -p 80:80 <nome_da_imagem>
 
+        -Via console:
+            - Recupera o valor do Public IPv4 DNS de sua instância EC2;
+            - Faça requisição no browser: http://<endereço_da_máquina>/home.html
