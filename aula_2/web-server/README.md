@@ -8,37 +8,39 @@
     - Key pair
 
 #### Passo a passo
+    -Via console:
+        - Configurar e subir a instância EC2 (como fizemos em aula);
+        
+    -Via Terminal:
+        - Conecta na máquina localmente via ssh;
+        - Instala o docker : sudo amazon-linux-extras install docker
+        - Start docker service: sudo service docker start
+        - Permissão para ec2-user: sudo usermod -a -G docker ec2-user
+        - Settar inicialização automatica do docker: sudo chkconfig docker on
+        - Reinicia servidor: sudo reboot
+        - reconecta na máquina via ssh
 
-    - Sobe a instância EC2;
-    - Conecta na máquina localmente via ssh;
-    - Instala o docker : sudo amazon-linux-extras install docker
-    - Start docker service: sudo service docker start
-    - Permissão para ec2-user: sudo usermod -a -G docker ec2-user
-    - Settar inicialização automatica do docker: sudo chkconfig docker on
-    - Reinicia servidor: sudo reboot
-    - reconecta na máquina via ssh
+        - Cria o site
+            mkdir site
+            cd site
+            mkdir html
+            cd html
+            nano home.html
+                - adiciona no html: <h3>Hello Ec2!</h3>
+                - ctrl+x
+                - y
+                - enter
 
-    - Cria o site
-        mkdir site
-        cd site
-        mkdir html
-        cd html
-        nano home.html
-            - adiciona no html: <h3>Hello Ec2!</h3>
-            - ctrl+x
-            - y
-            - enter
+        - Criar dockerfile
+            cd ..
+            nano Dockerfile
+                - adiciona no Dockerfile:
 
-    - Criar dockerfile
-        cd ..
-        nano Dockerfile
-            - adiciona no Dockerfile:
+                FROM httpd:2.4
 
-            FROM httpd:2.4
+                COPY ./html/ /usr/local/apache2/htdocs/
 
-            COPY ./html/ /usr/local/apache2/htdocs/
+        -buildar imagem: docker build -t <nome_da_imagem> .
 
-    -buildar imagem: docker build -t <nome_da_imagem> .
-
-    -rodar imagem: docker run -d --name <nome_do_conteiner> -p 80:80 <nome_da_imagem>
+        -rodar imagem: docker run -d --name <nome_do_conteiner> -p 80:80 <nome_da_imagem>
 
