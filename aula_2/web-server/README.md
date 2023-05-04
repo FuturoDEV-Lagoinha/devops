@@ -5,16 +5,18 @@
     Requisitos:
 
     - Security Group (como fizemos em aula);
-        - inboud http qualquer ipv4;
-        - inbout ssh ip da sua máquina;
-        
+        - inbound rule: protocolo http aberto para qualquer ipv4;
+        - inbound rule: protocolo ssh aberto para o IP da sua máquina;
+
     - Key pair (como fizemos em aula);
-        - RES
+        - RES;
         - .pem (OpenSSH)
 
 #### Passo a passo
     -Via console:
         - Configurar e subir a instância EC2 (como fizemos em aula);
+        - Lembre-se de selecionar a máquina t2.micro (free tier);
+        - Lembre-se de desligar a máquina (stop) depois de estudar para não gastar horas gratuitas a toa!
 
     -Via Terminal:
         - Conecta na máquina localmente via ssh;
