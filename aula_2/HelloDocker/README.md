@@ -3,7 +3,7 @@
 ### Hello Docker!
 
 - Buildar:
-    - na pasta /HelloDocker/ execute o comando: docker build -t <nome-da-imagem> .
+    - na pasta /HelloDocker/ execute o comando: docker build -t <nome_da_imagem> .
 
 - Executar o container: 
     docker run <nome_da_imagem>
@@ -15,19 +15,19 @@
 
 - Executar comando de login no ECR:
     
-    aws ecr get-login-password --region <regiao> | docker login --username AWS --password-stdin <aws-account>.dkr.ecr.<regiao>.amazonaws.com
+    aws ecr get-login-password --region <regiao> | docker login --username AWS --password-stdin <aws_account>.dkr.ecr.<regiao>.amazonaws.com
 
 - Executar build:
     
-    docker build -t <nome-da-imagem> .
+    docker build -t <nome_da_imagem> .
 
 - Executar tag:
 
-    docker tag <nome-da-imagem>:latest <aws-account>.dkr.ecr.<regiao>.amazonaws.com/<nome-da-imagem>:latest
+    docker tag <nome_da_imagem>:latest <aws_account>.dkr.ecr.<regiao>.amazonaws.com/<nome_da_imagem>:latest
 
 
 - Executar push:
 
-    docker push <aws-account>.dkr.ecr.<regiao>.amazonaws.com/<nome-da-imagem>:latest
+    docker push <aws_account>.dkr.ecr.<regiao>.amazonaws.com/<nome_da_imagem>:latest
 
 

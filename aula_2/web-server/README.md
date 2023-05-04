@@ -38,7 +38,7 @@
 
             COPY ./html/ /usr/local/apache2/htdocs/
 
-    -buildar imagem: docker build -t <nome-da-imagem> .
+    -buildar imagem: docker build -t <nome_da_imagem> .
 
-    -rodar imagem: docker run -d --name <nome-do-conteiner> -p 80:80 <nome-da-imagem>
+    -rodar imagem: docker run -d --name <nome_do_conteiner> -p 80:80 <nome_da_imagem>
 
