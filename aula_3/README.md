@@ -15,7 +15,7 @@
 4. Para validar a execução do Apache no cluster faça Requisição HTTP no DNS do Load Balancer.
 
 ##### Arquitetura do Amazon ECS
-<br/><img src="/aula_3/img/ecs-architecture.png" width="600" height="500">
+<br/><img src="/aula_3/img/ecs-architecture.png" width="500" height="600">
 
 
 #### Kubernetes (minikube)
@@ -61,4 +61,4 @@
 
 ##### Diagrama do Exercício com Kubernetes
 
-<br/><img src="/aula_3/img/dev-to-k8s.png" width="600" height="500">
+<br/><img src="/aula_3/img/dev-to-k8s.png" width="500" height="600">
