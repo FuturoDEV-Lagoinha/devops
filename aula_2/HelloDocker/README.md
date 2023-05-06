@@ -33,8 +33,7 @@
 ## Baixar e executar a imagem do repositório no ECR em instância EC2
 
 Diagrama IAM Role e Políticas.
-
-![iamrole](/aula_2/img/iam-policy-role.png)
+<img src="/aula_2/img/iam-policy-role.png" width="100" height="100">
 
 
     - Crie uma nova IAM Role(Função) para sua instância EC2 acessar o ECR;
