@@ -1,4 +1,6 @@
-### Escalabilidade e Elasticidade 
+### Escalabilidade e Elasticidade
+
+<br/><img src="/aula_3/img/scalability" width="500" height="600">
 
 #### Amazon ECS
 
@@ -11,6 +13,10 @@
      - Configurar Load Balancer;
 
 4. Para validar a execução do Apache no cluster faça Requisição HTTP no DNS do Load Balancer.
+
+##### Arquitetura do Amazon ECS
+<br/><img src="/aula_3/img/ecs-architecture" width="500" height="600">
+
 
 #### Kubernetes (minikube)
 
@@ -51,4 +57,8 @@
 
     - verifique o output do pod
         
-        kubectl logs nome-container 
+        kubectl logs nome-container
+
+##### Diagrama do Exercício com Kubernetes
+
+<br/><img src="/aula_3/img/dev-to-k8s.png" width="500" height="600">
