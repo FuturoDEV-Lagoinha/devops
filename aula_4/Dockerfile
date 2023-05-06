@@ -6,4 +6,5 @@ COPY . /app/
 
 RUN javac HelloDocker.java
 
+#alteração
 ENTRYPOINT ["java", "Hello"]
