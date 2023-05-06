@@ -1,6 +1,6 @@
 ### Escalabilidade e Elasticidade
 
-<br/><img src="/aula_3/img/scalability.png" width="500" height="600">
+<br/><img src="/aula_3/img/scalability.png" width="600" height="500">
 
 #### Amazon ECS
 
