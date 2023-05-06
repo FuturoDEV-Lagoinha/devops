@@ -7,7 +7,7 @@ name: Deploy ECR
 
 on: #quando
   push: #novo código
-    branches: [ cicd ] #nesta branch -> start action
+    branches: [ main ] #nesta branch -> start action
 
 jobs:
 
