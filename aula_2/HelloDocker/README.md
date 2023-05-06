@@ -32,9 +32,9 @@
 
 ## Baixar e executar a imagem do repositório no ECR em instância EC2
 
-    Diagrama IAM Role e Políticas.
+Diagrama IAM Role e Políticas.
 
-    ![iamrole](/aula_2/HelloDocker/img/iam-policy-png)
+![iamrole](/aula_2/img/iam-policy-png)
 
 
     - Crie uma nova IAM Role(Função) para sua instância EC2 acessar o ECR;
