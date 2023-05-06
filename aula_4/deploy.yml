@@ -1,0 +1,41 @@
+#nome da Ação
+name: Deploy to ECR
+
+# Controle de gatilho do workflow
+on:
+  # Gatilho para alterações na branch especificada
+  push:
+    branches: [ main ]
+#jobs do workflow
+jobs:
+  #teremos um unico job de build
+  build:
+    
+    name: Build Image
+    runs-on: ubuntu-latest
+
+    # Etapas de nosso build job
+    steps:
+      #checagem de código
+    - name: Check out code
+      uses: actions/checkout@v2
+      #configuração das credenciais da AWS
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+      #login no ECR
+    - name: Login to Amazon ECR
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v1
+      #Docker build, tag e push para ECR
+    - name: Build, tag, and push image to Amazon ECR
+      env:
+        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        ECR_REPOSITORY: teste2
+        IMAGE_TAG: teste2
+      run: |
+        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
