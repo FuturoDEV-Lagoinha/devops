@@ -1,6 +1,6 @@
 ### Escalabilidade e Elasticidade
 
-<br/><img src="/aula_3/img/scalability" width="500" height="600">
+<br/><img src="/aula_3/img/scalability.png" width="500" height="600">
 
 #### Amazon ECS
 
@@ -15,7 +15,7 @@
 4. Para validar a execução do Apache no cluster faça Requisição HTTP no DNS do Load Balancer.
 
 ##### Arquitetura do Amazon ECS
-<br/><img src="/aula_3/img/ecs-architecture" width="600" height="500">
+<br/><img src="/aula_3/img/ecs-architecture.png" width="600" height="500">
 
 
 #### Kubernetes (minikube)
