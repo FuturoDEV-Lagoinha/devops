@@ -33,7 +33,7 @@
 ## Baixar e executar a imagem do repositório no ECR em instância EC2
 
 Diagrama IAM Role e Políticas.
-<br/><img src="/aula_2/img/iam-policy-role.png" width="500" height="600">
+<br/><img src="/aula_2/img/iam-policy-role.png" width="600" height="500">
 
 
     - Crie uma nova IAM Role(Função) para sua instância EC2 acessar o ECR;
@@ -107,4 +107,4 @@ Diagrama IAM Role e Políticas.
 ##### Quando fazemos o push da imagem para o ECR, realizamos a disponibilização da aplicação do ambiente de DEV para Operação. 
 
 ##### Diagrama workflow entre ambientes:
-<br/><img src="/aula_2/img/dev-to-operations.png" width="500" height="600">
+<br/><img src="/aula_2/img/dev-to-operations.png" width="600" height="500">

@@ -17,4 +17,4 @@
 
 
 ##### Diagrama do Pipeline de CICD implementado.
-<br/><img src="/aula_4/img/cicd.png" width="500" height="600">
+<br/><img src="/aula_4/img/cicd.png" width="600" height="500">
